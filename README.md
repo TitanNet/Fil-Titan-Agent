@@ -4,7 +4,9 @@
 
 [![Go Version](https://img.shields.io/badge/Go-1.22.5+-blue.svg)](https://golang.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Community](https://img.shields.io/badge/Join-Community-blue)](https://discord.gg/your-discord-link) **`FIL-Titan-Agent` is an open-source application for Filecoin Storage Providers (SPs) that securely connects your underutilized bandwidth to the Titan Network, creating a new, subsidy-free revenue stream independent of block rewards.**
+[![Community](https://img.shields.io/badge/Join-Community-blue)](https://discord.gg/your-discord-link) 
+
+**`FIL-Titan-Agent` is an open-source application for Filecoin Storage Providers (SPs) that securely connects your underutilized bandwidth to the Titan Network, creating a new, subsidy-free revenue stream independent of block rewards.**
 
 This repository contains the official source code for the FIL-Titan-Agent. By running this lightweight agent, you can monetize your idle infrastructure, turning underutilized resources into a stable and tangible commercial revenue stream.
 
