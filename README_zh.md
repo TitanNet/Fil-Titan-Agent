@@ -4,7 +4,6 @@
 
 [![Go Version](https://img.shields.io/badge/Go-1.22.5+-blue.svg)](https://golang.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![社区](https://img.shields.io/badge/加入-社区-blue)](https://discord.gg/your-discord-link) 
 
 **`FIL-Titan-Agent` 是一个为 Filecoin 存储提供商 (SP) 设计的开源软件，它能安全地将您存储设施中未被充分利用的上行带宽资源，接入到 Titan 的商业服务网络中，为您创造一个独立于区块奖励的全新、无需补贴的收入来源。**
 
