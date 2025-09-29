@@ -26,6 +26,14 @@
 
 ---
 
+## 工作原理
+
+下图展示了 Titan Network 完整的价值闭环。它清晰地描绘了终端用户的付款如何流经整个系统，最终用于奖励贡献了带宽资源（阶段一）以及未来贡献热存储资源（阶段二）的存储提供商。
+ <img width="1540" height="1137" alt="image" src="https://github.com/user-attachments/assets/1d5c6fb7-6d4d-451c-a297-725e81b04c07" />
+
+
+---
+
 ## 快速开始
 
 要开始使用 Fil-Titan Agent，请参阅我们的运行教程和安装指南。
