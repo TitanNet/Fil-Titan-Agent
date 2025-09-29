@@ -26,6 +26,14 @@ This repository contains the official source code for the FIL-Titan-Agent. By ru
 
 ---
 
+## How It Works
+
+The diagram below illustrates the complete value loop of the Titan Network. It shows how end-users' payments flow through the system to reward Storage Providers for contributing their bandwidth (Stage 1) and, in the future, hot storage resources (Stage 2).
+
+<img width="1534" height="1136" alt="image" src="https://github.com/user-attachments/assets/251a3066-1ff3-4a47-9545-5f12e3c32e96" />
+
+---
+
 ## Quick Start
 
 To get started with Fil-Titan Agent, please refer to our running tutorials and installation guides.
