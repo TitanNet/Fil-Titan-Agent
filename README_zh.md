@@ -154,6 +154,6 @@ sudo systemctl enable --now titan-agent
 
 ## 许可证 (License)
 
-本项目基于 MIT 许可证 - 详情请参阅 [LICENSE](https://www.google.com/search?q=LICENSE) 文件。
+本项目基于 MIT 许可证 - 详情请参阅 [LICENSE](LICENSE) 文件。
 
 ```
