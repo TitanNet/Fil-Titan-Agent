@@ -1,0 +1,28 @@
+version: "3.3"
+services:
+  agent:
+    image: titanhub/titan-agent:0.1
+    privileged: true
+    restart: always
+    tty: true
+    stdin_open: true
+    security_opt:
+      - apparmor=unconfined
+    # cap_add:
+    #  - ALL
+    network_mode: host
+    
+    volumes:
+      - ./data:/app/data
+      - ./data/docker:/var/lib/docker
+      - ./.env:/app/agent/.env:ro
+
+# docker run -d \
+#   --privileged \
+#   --name dind-test \
+#   --network host \
+#   -v $(pwd)/data:/app/data \
+#   -v $(pwd)/data/docker:/var/lib/docker \
+#   -v $(pwd)/.env:/app/agent/.env:ro \
+#   titanhub/ubuntu-systemd-dind:22.04 \
+#   /sbin/init
