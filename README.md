@@ -42,7 +42,7 @@ To get started with Fil-Titan Agent, please refer to our running tutorials and i
 - **multipass** (windows, macos, linux)
 - **virtualbox** (windows)
 
-📖 **Detailed Running Tutorials:** [Multi-Device Type Running Tutorials](https://titannet.gitbook.io/titan-network-cn/4-ce-jia-li-le-ce-shi-wang/titan-agent-an-zhuang-jiao-cheng)
+📖 **Detailed Running Tutorials:** [Multi-Device Type Running Tutorials](https://titannet.gitbook.io/titan-network-cn/titan-network-en/galileo-testnet/titan-agent-installation-guide)
 
 ### 1. Preparation
 
@@ -52,7 +52,7 @@ To get started with Fil-Titan Agent, please refer to our running tutorials and i
 ### 2. Get Your Identity Key
 
 - **Follow this tutorial to get your key:**
-  - [Titan Network Key Acquisition Tutorial](https://titannet.gitbook.io/titan-network-cn/4-ce-jia-li-le-ce-shi-wang/ru-he-huo-qu-key)
+  - [Titan Network Key Acquisition Tutorial](https://titannet.gitbook.io/titan-network-cn/titan-network-en/galileo-testnet/how-to-get-the-key)
 
 ### 3. Installation and Execution
 
