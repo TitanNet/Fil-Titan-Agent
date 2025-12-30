@@ -24,7 +24,6 @@ import (
 )
 
 const (
-	Version             = "0.1.1"
 	httpTimeout         = 20 * time.Second
 	pushMetricsInterval = 120 * time.Second
 )

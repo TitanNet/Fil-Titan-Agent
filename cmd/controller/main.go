@@ -14,9 +14,12 @@ import (
 	"os"
 	"os/signal"
 	"path/filepath"
+	"strings"
 	"syscall"
 	"time"
 
+	"github.com/common-nighthawk/go-figure"
+	"github.com/fatih/color"
 	log "github.com/sirupsen/logrus"
 	"github.com/urfave/cli/v2"
 )
@@ -157,7 +160,7 @@ var runCmd = &cli.Command{
 			os.Stdout = file
 		}
 
-		fmt.Print(logoWindow)
+		printLogo()
 
 		args := &controller.ConrollerArgs{
 			WorkingDir:           cctx.String("working-dir"),
@@ -427,16 +430,34 @@ func main() {
 	}
 }
 
-const (
-	logoWindow = `
-╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮
-┃   ▀█▀   █   ▀█▀   ▄▀█   █▄░█         ┃
-┃   ░█░   █   ░█░   █▀█   █░▀█         ┃
-┃━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┃
-┃           4th Galileo TestNet        ┃
-┃               Version 0.1.3          ┃
-╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯
-`
+func printLogo() {
+	myFigure := figure.NewFigure("TITAN FIL", "slant", true)
+	lines := myFigure.Slicify()
+
+	maxWidth := 0
+	for _, line := range lines {
+		if len(line) > maxWidth {
+			maxWidth = len(line)
+		}
+	}
+
+	cyan := color.New(color.FgCyan, color.Bold)
+	for _, line := range lines {
+		cyan.Println(line)
+	}
+
+	fmt.Println()
+	versionTextPlain := fmt.Sprintf("Version %s", controller.Version)
+	versionPadding := maxWidth - len(versionTextPlain)
+	if versionPadding > 0 {
+		leftPad := versionPadding / 2
+		fmt.Print(strings.Repeat(" ", leftPad))
+	}
+	gray := color.New(color.FgHiBlack)
+	gray.Print("Version ")
+	color.New(color.FgWhite, color.Bold).Println(controller.Version)
+	fmt.Println()
+}
 
 //	MonitorWindow = `
 //
@@ -449,4 +470,3 @@ const (
 // ║                                                       ║
 // ╚═══════════════════════════════════════════════════════╝
 // `
-)

@@ -50,7 +50,7 @@ func loadAgentID(workDir string) (string, error) {
 	idPath := filepath.Join(workDir, agtConfigPath, agtIdFile)
 
 	if _, err := os.Stat(idPath); os.IsNotExist(err) {
-		agentID := uuid.NewString()
+		agentID := "fil_" + uuid.NewString()
 		if err := createAndWriteFile(idPath, []byte(agentID)); err != nil {
 			return "", err
 		}
